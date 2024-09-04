@@ -1,0 +1,84 @@
+<html>
+<head>
+
+<title>Forms</title>
+</head>
+<body>
+   <h2>WELCOME TO rEGISTRATION FORM</h2>
+   
+   <form>
+   
+   <fieldset>
+   <legend>Registration Form:</legend>
+   <label for="uname">Username :</label>
+   <input type="text" name="uname" id="uname"  placeholder="Enter Username"  disabled/> <br><br>
+   <label for="pwd"> Password :</label>
+   <input type="password" name="pass" id="pwd" placeholder="Enter Password" required/><br><br>
+   <label for="email">Email Id :</label>
+   <input type="email" name="email" id="email"/><br><br>
+   <label for="phone">Phone Number :</label>
+   <input type="tel" name="phone" id="phone"/><br><br>
+   <label for="dt"> Date  :</label>
+   <input type="date" name="date" id="dt" min="2008-12-12" max="2024-08-12"/><br><br>
+   <label for="time">Time   :</label>
+   <input type="time" name="time" id="time"/><br><br>
+   <label for="color">Color  :</label>
+   <input type="color" name="color" id="color"/><br><br>
+   Gender  :
+   <input type="radio" name="gender" value="MALE"/>MALE
+   <input type="radio" name="gender" value="FEMALE" checked/>FEMALE
+   <input type="radio" name="gender" value="OTHER"/>OTHER 
+   <br><br>
+   Known Languges:
+   <input type="checkbox" name="lang1" value="Telugu"/>Telugu
+   <input type="checkbox" name="lang2" value="Hindi"/>Hindi
+   <input type="checkbox" name="lang3" value="English"/>English
+   <br><br>
+   <label for="dnt">Date and Time </label>
+   <input type="datetime-local" name="dateand time" id="dnt">
+   <br><br>
+   <label for="month">Month :</label>
+   <input type="month" name="month" id="month"/>
+   <br></br>
+      <label for="week">Week :</label>
+   <input type="week" name="week" id="week"/>
+   <br></br>
+   <label for="range">Range :</label>
+   <input type="range" name="range" id="range"/>
+   <br></br>
+   <label for="num">Number  :</label>
+   <input type="number" name="num" id="num" step="0.5" max="10" />
+   <br></br>
+   <label for="ser">Search  :</label>
+   <input type="search" name="raerchnge" id="ser"/>
+   <br></br>
+   <label for="img">Image :</label>
+   <input type="image" name="image" id="img" src="images/paint.jpg" height="50px" width="50px"/>
+   <br></br>
+   <label for="file">File :</label>
+   <input type="file" name="file" id="file" multiple/>
+   <br></br>
+   <label for="url">Url  :</label>
+   <input type="url" name="url" id="url"/>
+   <br></br>
+   <label for="hid">Hidden :</label>
+   <input type="hidden" name="gide" id="hid"/>
+   <br></br>
+   Cars :<select>
+       <option value="Audi">Audi</option>
+	   <option value="Bnez" selected>bnz</option>
+       <option value="Bmw">bmw</option>
+       <option value="rr">rr</option>  
+   </select>
+   <br><br>
+   Comments :<textarea name="comments" rows="30" cols="30">
+   
+   </textarea>
+   <br><br>
+   <input type="submit" value="Submit"/>
+   <input type="reset" value="clear"/>
+   </fieldset>
+   </form>
+
+</body>
+</html>
