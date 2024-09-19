@@ -1,0 +1,792 @@
+ex1:
+----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediw Queries with max width</title>
+
+    <style>
+         body {
+        text-align: center;
+    }
+     
+    .sathya {
+        font-size: 40px;
+        font-weight: bold;
+        color: green;
+    }
+     
+    @media screen and (max-width:800px) {
+        body {
+            text-align: center;
+            background-color: green;
+        }
+        .sathya {
+            font-size: 30px;
+            font-weight: bold;
+            color: white;
+        }
+        .prakash {
+            color: white;
+        }
+    }
+     
+    @media screen and (max-width:500px) {
+        body {
+            text-align: center;
+            background-color: blue;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="sathya">Welcome to Media Queries</div>
+    <div class="prakash">A curated interactive space for aspiring programmers to 
+        learn and master their coding skills.</div>
+</body>
+</html>
+
+
+ex2:
+--------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Elements With CSS Media Queries</title>
+</head>
+<style>
+    div.example {
+  background-color: #008cff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+</style>
+<body>
+    <h2>Hide elements on different screen sizes</h2>
+
+<div class="example">Example DIV.</div>
+</body>
+</html>
+
+
+ex:3:\
+-----------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Elements With CSS Media Queries</title>
+</head>
+<style>
+    div.example {
+  background-color: #008cff;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+</style>
+<body>
+    <h2>Hide elements on different screen sizes</h2>
+
+<div class="example">Example DIV.</div>
+</body>
+</html>
+
+
+ex:4:
+------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Font Size With Media Queries in CSS</title>
+    <style>
+        div.example {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  div.example {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+    </style>
+</head>
+<body>
+    <h2>Change the font size of an element on different screen sizes</h2>
+
+<div class="example">Example DIV.</div>
+</body>
+</html>
+
+
+
+ex:5:
+------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backround color ranges</title>
+    <style>
+        body {
+  background-color: #fff;
+}
+
+@media (min-width: 30em) and (max-width: 80em) {
+  body {
+    background-color: purple;
+  }
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+ex: 6:-
+--------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width and Height Media Feature Rules</title>
+    <style>
+        @media screen and (max-width: 840px){
+          p {
+            color: red;
+          }
+        }
+ 
+    </style>
+</head>
+<body>
+    <center>
+        <p>Checking Media Rules</p>
+       </center>
+</body>
+</html>
+
+
+
+ex:7:---
+----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+@media screen and (min-width:1080px){
+    h1{
+        background-color: yellow;
+    }
+
+}
+
+
+.box-1{
+    width:200px;
+    height:200px;
+    background-color: red;
+}
+
+/*TABLET SCREEN*/
+@media screen and (max-width:800px){
+   .box-1{
+         background-color: green;
+   }
+}
+
+
+/*MOBILE SCREEN */
+@media screen and (max-width:369px){
+    .box-1{
+        background-color: yellow;
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1>welcome to media queries</h1>
+    <div class="box-1"></div>
+</body>
+</html>
+
+
+
+
+ex: 8:
+----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Navigation Menu</title>
+    <style>
+        /* Default styles for navigation menu */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 600px) {
+      .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+</body>
+</html>
+
+
+
+ex: 9:
+------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adapting Grid Layout</title>
+    <style>
+         /* Default grid layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-item {
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Media query for extra small screens */
+    @media screen and (max-width: 480px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+        <div class="grid-item">Item 4</div>
+      </div>
+</body>
+</html>
+
+
+
+
+
+
+ex: 10:
+-----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiding Elements on Small Screens</title>
+</head>
+<style>
+     /* Default styling for the element */
+     #sidebar {
+      width: 250px;
+    }
+
+    /* Media query to hide the element on screens with a maximum width of 768px */
+    @media screen and (max-width: 768px) {
+      #sidebar {
+        display: none;
+      }
+    }
+</style>
+<body>
+    <div id="sidebar">
+        <p>This is sidebar content.</p>
+      </div>
+</body>
+</html>
+
+
+
+
+
+ex:11:
+-----------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Typography</title>
+    <style>
+        /* Default font size for all screens */
+        body {
+          font-size: 16px;
+        }
+    
+        /* Media query for screens with a maximum width of 600px */
+        @media screen and (max-width: 600px) {
+          body {
+            font-size: 14px;
+          }
+        }
+    
+        /* Media query for screens with a minimum width of 1200px */
+        @media screen and (min-width: 1200px) {
+          body {
+            font-size: 18px;
+          }
+        }
+      </style>
+</head>
+<body>
+    <p>This is some text with responsive typography.</p>
+</body>
+</html>
+
+
+ex:12:
+-----
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mEDIA QUERIES</title>
+    <STYLE>
+        *{
+margin:0px;
+}
+
+body,html{
+   width:100%;
+   height:100%;
+}
+
+.container{
+   width:100%;
+   max-width:1100px;
+   margin-left:auto;
+   margin-right:auto;
+   background-color:#ccc;
+}
+
+#header{
+  height:120px;
+  background-color:blue;
+}
+
+.box{
+width:50%;
+height:140px;
+float:left;
+}
+
+.cleadfix{
+  clear:both;
+}
+
+.box1{
+ background-color: yellow;
+}
+.box2{
+ background-color: pink;
+}
+.box3{
+ background-color: grey;
+}
+.box4{
+ background-color: red;
+}
+
+
+@media screen and (max-width:768px){
+
+    .box1{
+        width: 100%;
+    }
+
+    .box2{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px){
+
+    .box3{
+        width:100%;
+    }
+    .box4{
+        width: 100%;
+    }
+}
+    </STYLE>
+</head>
+<body>
+    
+               <div class="container">
+		            <header id="header"></header>
+					<div class="box box1">box1</div>
+					<div class="box box2">box2</div>
+					<div class="box box3">box3</div>
+					<div class="box box4">box4</div>
+					<div class="clearfix"></div>
+		   
+		   </div>
+</body>
+</html>
+
+
+
+ex: 13:
+------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Button Styles for Different Screen Sizes</title>
+    <style>
+        /* Default button styles */
+        .btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #007bff;
+          color: #fff;
+        }
+    
+        /* Media query for smaller screens */
+        @media screen and (max-width: 480px) {
+          .btn {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+        }
+        </style>
+</head>
+<body>
+    <button class="btn">Click Me</button>
+</body>
+</html>
+
+ex:14:
+--------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearranging Content for Mobile Devices</title>
+    <style>
+
+        /* Default styles for content */
+        .container {
+          display: flex;
+          flex-direction: row;
+        }
+    
+        .content {
+          flex: 1;
+          background-color: aqua;
+          color:brown;
+          font-size: 2em;
+        }
+    
+        .sidebar {
+          flex: 0.3;
+          background-color: blue;
+          color:white;
+          font-size: 2em;
+        }
+    
+        /* Media query for small screens */
+        @media screen and (max-width: 768px) {
+          .container {
+            flex-direction: column;
+          }
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+          <p>Main Content Here</p>
+        </div>
+        <div class="sidebar">
+          <p>Sidebar Content Here</p>
+        </div>
+      </div>
+</body>
+</html>
+
+
+
+ex: 15:
+-------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Scaling</title>
+    <style>
+        /* Default image styles */
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+    
+        /* Media query for larger screens */
+        @media screen and (min-width: 1024px) {
+          img {
+            max-width: 80%;
+          }
+        }
+      </style>
+</head>
+<body>
+    <img src="keerthi.jpg" alt="Responsive Image">
+</body>
+</html>
+
+
+
+ex:16:
+------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Background Color on Hover</title>
+    <style>
+        /* Default button styles */
+        .button {
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          transition: background-color 0.3s ease;
+        }
+    
+        /* Media query for hover effect on larger screens */
+        @media screen and (min-width: 768px) {
+          .button:hover {
+            background-color: #ff9900;
+          }
+        }
+        </style>
+</head>
+<body>
+    <button class="button">Hover Me</button>
+</body>
+</html>
+
+
+
+
+ex:17:
+----------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu with Dropdown for Mobile</title>
+    <style>
+         /* Default styles for navigation menu */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 768px) {
+      .navbar a {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+      .navbar.responsive {
+        position: relative;
+      }
+      .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#" class="icon">&#9776;</a>
+      </div>
+</body>
+</html>
+
+
+
+
+ex:17:
+-----
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing width</title>
+    <style> 
+        .container {
+            margin: 0 auto;
+            background: #ceceff;
+            box-sizing: border-box;
+        }
+        /* Mobile phones (portrait and landscape) ---------- */
+        @media screen and (max-width: 767px){
+            .container {
+                width: 100%;
+                padding: 5px 10px;
+            }
+        }
+        /* Tablets and iPads (portrait and landscape) ---------- */
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .container {
+                width: 750px;
+                padding: 5px 10px;
+            }
+        }
+        /* Low resolution desktops and laptops ---------- */
+        @media screen and (min-width: 1024px) {
+            .container {
+                width: 980px;
+                padding: 5px 15px;
+            }
+        }
+        /* High resolution desktops and laptops ---------- */
+        @media screen and (min-width: 1280px) {
+            .container {
+                width: 1200px;
+                padding: 5px 20px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+		<p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+	</div>
+</body>
+</html>
