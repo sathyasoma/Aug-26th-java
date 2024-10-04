@@ -1,0 +1,74 @@
+1. Which method is used to attach an event handler to an element in JavaScript?
+A) element.onEvent = function
+B) element.addEventListener("event", function)
+C) element.attachEvent("event", function)
+**D) element.addEvent("event", function)
+
+
+2. How do you prevent the default action of an event in JavaScript?
+A) event.stopPropagation()
+B) event.preventDefault()
+C) event.stopImmediatePropagation()
+**D) event.cancelDefault()
+
+3. What will be the output of the following code?
+
+document.getElementById("myButton").addEventListener("click", function(event) {
+  console.log(event.type);
+});
+A) click
+B) button
+C) event
+D) undefined
+
+4. Which of the following methods is used to remove an event listener from an element?
+A) element.removeEventListener("event", function)
+B) element.detachEvent("event", function)
+C) element.deleteEventListener("event", function)
+**D) element.removeListener("event", function)
+
+5. What does the event.currentTarget property refer to in an event handler?
+A) The element that triggered the event.
+B) The element that the event handler is attached to.
+C) The parent element of the event target.
+**D) The window object.
+
+6. How can you attach multiple event handlers to a single element for the same event type?
+A) By calling addEventListener() multiple times with the same event type.
+B) By using element.onEvent multiple times.
+C) By using element.attachEvent() multiple times.
+**D) By using element.addEvent() multiple times.
+
+
+7. What is the purpose of the event.target property?
+A) It refers to the element that the event handler is attached to.
+B) It refers to the element that is the target of the event.
+C) It refers to the parent element of the event target.
+**D) It refers to the window object.
+
+8. What does the event.stopPropagation() method do?
+A) It prevents the event from propagating to parent elements.
+B) It prevents the default action of the event.
+C) It removes the event listener from the element.
+**D) It stops the event from being fired.
+
+9. How do you attach an event handler to an element using inline HTML event attributes?
+A) <button onclick="functionName()">Click me</button>
+B) <button onClick="functionName()">Click me</button>
+C) <button addEventListener="functionName()">Click me</button>
+D) <button eventListener="functionName()">Click me</button>
+
+10. What will be the result of the following code?
+javascript
+Copy code
+document.getElementById("myButton").addEventListener("click", function() {
+  console.log("Button clicked");
+});
+document.getElementById("myButton").click();
+A) Button clicked is logged to the console.
+B) Button clicked is not logged to the console.
+C) An error is thrown.
+**D) The button is not clicked.
+
+
+

@@ -1,0 +1,20 @@
+1.Answer: A) A programming interface for HTML and XML documents.
+Explanation: The DOM (Document Object Model) is a programming interface that allows JavaScript to access and manipulate the structure, style, and content of HTML and XML documents.
+2.Answer: D) Both A and B
+Explanation: You can select an element by its ID using either document.getElementById("id") or document.querySelector("#id"). Both methods return the element with the specified ID.
+3.Answer: D) Both A and C
+Explanation: If the element with ID myDiv exists, its inner HTML will be set to "Hello, World!". If the element does not exist, the code will throw an error.
+4.Answer: A) element.addEventListener("event", function)
+Explanation: The addEventListener() method is used to attach an event handler to an element. It allows you to specify the event type and the function to be executed when the event occurs.
+5.Answer: A) Creates a new HTML element.
+Explanation: The document.createElement() method creates a new HTML element, which can then be added to the DOM.
+6.Answer: A) parent.removeChild(child)
+Explanation: The removeChild() method is used to remove a specified child element from its parent element.
+7.Answer: A) The number of elements with the class myClass.
+Explanation: The getElementsByClassName() method returns a collection of all elements in the document with the specified class name. The length property gives the number of such elements.
+8.Answer: D) Both A and B
+Explanation: You can set the value of an input field using input.value = "new value"; or input.setAttribute("value", "new value");.
+9.Answer: A) event.stopPropagation()
+Explanation: The stopPropagation() method prevents further propagation of the current event in the capturing and bubbling phases.
+10.Answer: A) It sets or returns the HTML content inside an element.
+Explanation: The innerHTML property is used to set or get the HTML content inside an element.

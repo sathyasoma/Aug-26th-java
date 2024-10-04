@@ -1,0 +1,88 @@
+
+1. What is the correct syntax to define a function in JavaScript?
+A) function myFunction { }
+B) function: myFunction() { }
+C) function myFunction() { }
+D) myFunction() => { }
+
+2. What will be the output of the following code?
+
+function add(a, b) {
+    return a + b;
+}
+console.log(add(2, 3));
+A) 23
+B) 5
+C) undefined
+D) NaN
+
+3. What is the purpose of the return statement in a function?
+A) It stops the execution of the function and returns a value to the caller.
+B) It pauses the function execution and can resume later.
+C) It restarts the function execution from the beginning.
+D) It continues the function execution without returning any value.
+
+4. What will be the output of the following code?
+
+function multiply(a, b = 2) {
+    return a * b;
+}
+console.log(multiply(3));
+A) 6
+B) 3
+C) undefined
+D) NaN
+
+5. Which of the following is true about anonymous functions in JavaScript?
+A) They have no name and can only be used as callbacks.
+B) They have no name and can be assigned to a variable or passed as arguments.
+C) They must be declared with the function keyword and a name.
+D) They cannot return a value.
+
+6. What is the output of the following code?
+
+(function() {
+    console.log("Hello, World!");
+})();
+A) undefined
+B) Hello, World!
+C) ReferenceError
+D) TypeError
+
+
+7. Can JavaScript functions be nested inside other functions?
+A) No, functions cannot be nested inside other functions.
+B) Yes, but the inner function is not accessible outside the outer function.
+C) Yes, and the inner function can be accessed from outside the outer function.
+D) No, but you can define variables within functions.
+
+8. What will be the output of the following code?
+
+var x = function(a, b) {
+    return a / b;
+};
+console.log(x(10, 2));
+A) 5
+B) 2
+C) 0.5
+D) undefined
+
+9. What does the following code return?
+
+function greet() {
+    return function() {
+        return "Hello!";
+    };
+}
+var greetFunc = greet();
+console.log(greetFunc());
+A) Hello!
+B) undefined
+C) greet
+D) TypeError
+
+10. Which of the following statements is true about arrow functions in JavaScript?
+A) Arrow functions are always function-scoped.
+B) Arrow functions do not have their own this context.
+C) Arrow functions cannot be used as constructors.
+D) Both B and C.
